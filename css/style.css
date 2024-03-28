@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  max-width: 1920px;
+  background: linear-gradient(#8147fd, #6336c1);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding-left: 0;
+}
+
+textarea,
+input {
+  outline: none;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: linear-gradient(#a47bfd, #9a71ea);
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form__title {
+  margin: 25px 10px 30px;
+  padding-right: 15px;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+.search-form__input-city {
+  max-width: 100%;
+  font-size: 18px;
+  margin: 0 10px 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+}
+
+.search-form__btn-search {
+  margin: 10px auto 15px;
+  padding: 12px 25px;
+  font-size: 18px;
+  width: 50%;
+  border: none;
+  border-radius: 15px;
+  background: #d9b6f0;
+  transition: all 0.2s;
+  color: #000;
+}
+
+.search-form__btn-search:hover {
+  background: #813ed2;
+  color: #fff;
+}
+
+.weather {
+  transition: opacity 0.3s ease-in-out, display 0.5s ease-in-out,
+    margin 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.weather-visible {
+  opacity: 1;
+  margin: 5px;
+  display: block;
+}
+
+.weather-none {
+  transition: display 0.3s ease-in-out;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 9px;
+  padding-left: 8px;
+}
+
+.weather-city {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.weather-condition {
+  color: #fff;
+  font-size: 18px;
+}
+
+.weather-box {
+  padding-right: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.weather-box__img {
+  width: 25%;
+}
+
+.weather-box__temperature {
+  margin: 5px;
+  font-size: 32px;
+  color: #fff;
+}
